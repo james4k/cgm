@@ -202,3 +202,12 @@ func RotateXYZ(x, y, z cgm.Radians) [16]float32 {
 		0, 0, 0, 1,
 	}
 }
+
+func Scale(x, y, z float32) [16]float32 {
+	return [16]float32{
+		x, 0, 0, 0,
+		0, y, 0, 0,
+		0, 0, z, 0,
+		0, 0, 0, 1,
+	}
+}
