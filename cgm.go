@@ -10,14 +10,14 @@ func Sqrt(x float32) float32 {
 
 type Degrees float32
 
-func (d Degrees) ToRadians() Radians {
-	return Radians(d * math.Pi / 180)
+func ToDegrees(r Radians) Degrees {
+	return Degrees(r * 180 / math.Pi)
 }
 
 type Radians float32
 
-func (r Radians) ToDegrees() Degrees {
-	return Degrees(r * 180 / math.Pi)
+func ToRadians(d Degrees) Radians {
+	return Radians(d * math.Pi / 180)
 }
 
 func Sin(r Radians) float32 {
